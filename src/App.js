@@ -115,7 +115,7 @@ function App() {
 					</label>
 				</Box> */}
 
-				<Box sx={{ minWidth: 120 }} id="role-filter">
+				<Box className="location_type" sx={{ minWidth: 120 }} id="role-filter">
 					<FormControl fullWidth>
 						<InputLabel id="demo-simple-select-label">jobRole</InputLabel>
 						<Select
@@ -138,7 +138,11 @@ function App() {
 					</FormControl>
 				</Box>
 
-				<Box sx={{ minWidth: 120 }} id="technology-filter">
+				<Box
+					className="location_type"
+					sx={{ minWidth: 120 }}
+					id="technology-filter"
+				>
 					<FormControl fullWidth>
 						<InputLabel id="demo-simple-select-label">technology</InputLabel>
 						<Select
@@ -174,7 +178,11 @@ function App() {
 					</label>
 				</Box> */}
 
-				<Box sx={{ minWidth: 120 }} id="experience-filter">
+				<Box
+					className="location_type"
+					sx={{ minWidth: 120 }}
+					id="experience-filter"
+				>
 					<FormControl fullWidth>
 						<InputLabel id="demo-simple-select-label">experience</InputLabel>
 						<Select
@@ -210,7 +218,7 @@ function App() {
 					</label>
 				</Box> */}
 
-				<Box sx={{ width: 300 }}>
+				<Box className="location_type" sx={{ width: 300 }}>
 					CTC
 					<Slider
 						size="small"
@@ -225,7 +233,11 @@ function App() {
 				</Box>
 			</Box>
 			<TableContainer component={Paper}>
-				<Table sx={{ minWidth: 650 }} aria-label="simple table">
+				<Table
+					className="leads_table"
+					sx={{ minWidth: 650 }}
+					aria-label="simple table"
+				>
 					<TableBody>
 						{result.map((item) => (
 							<Card
